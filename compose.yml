@@ -1,1 +1,15 @@
-Update this file to add the content
+version: '3'
+services:
+  Rahul:
+    image: "rahulmaharaj/22it035-personal-api"
+    container_name: rahulm_container
+    restart: always
+    ports:
+      - "5008:5000"
+
+  harinia:
+    image: "hariniarumugam/22it012-personal-api"
+    container_name: harinia_container
+    restart: always
+    ports:
+      - "5009:5000"
